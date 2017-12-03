@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brunch</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+</head>
+<body>
+  <div class="brunch">
+    <div class="FlexGrid min-vh100">
+      <div class="FlexCell-half bg-nearWhite">
+
+        <div class="Card">
+          <form id="ktpform">
+            <ul class="list-no-style list-ktp mb3">
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    NIK
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full numericinput" name="nik" id="nik">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Nama Lengkap
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="fullname">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Tempat Tgl.Lahir
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <div class="FlexGrid w-full">
+                      <div class="FlexCell-half">
+                        <input type="text" class="input-reset w-full" name="bornplace">
+                      </div>
+                      <div class="FlexCell-half">
+                        <div class="FlexGrid">
+                          <div class="FlexCell-oneThird">
+                            <input type="text" class="input-reset w-full numericinput" name="bornday" id="bornday">
+                          </div>
+                          <div class="FlexCell-oneThird">
+                            <input type="text" class="input-reset w-full numericinput" name="bornmonth" id="bornmonth">
+                          </div>
+                          <div class="FlexCell-oneThird">
+                            <input type="text" class="input-reset w-full numericinput" name="bornyear" id="bornyear">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Jenis Kelamin
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <select class="input-reset" name="gender">
+                      <option value="male">Laki-laki</option>
+                      <option value="female">Perempuan</option>
+                    </select>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Alamat
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="address">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    RT / RW
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <div class="FlexGrid w-full">
+                      <div class="FlexCell-oneThird">
+                        <input type="text" class="input-reset w-full numericinput" name="rt" id="rt">
+                      </div>
+                      <div class="FlexCell-oneThird">
+                        <input type="text" class="input-reset w-full numericinput" name="rw" id="rw">
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Kelurahan
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="kelurahan">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Kecamatan
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="kecamatan">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Kota
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="city">
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Status Perkawinan
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <select class="input-reset" name="martialstatus">
+                      <option value="single">Belum Menikah</option>
+                      <option value="marriage">Menikah</option>
+                      <option value="divorced">Cerai Hidup</option>
+                      <option value="widowed">Cerai Mati</option>
+                    </select>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="FlexGrid">
+                  <div class="FlexCell-oneThird">
+                    Pekerjaan
+                  </div>
+                  <div class="FlexCell-twoThird">
+                    <input type="text" class="input-reset w-full" name="jobs">
+                  </div>
+                </label>
+              </li>
+
+            </ul>
+
+            <div class="resultType mb3">
+              <label class="FlexGrid">
+                <div class="FlexCell-oneThird">
+                  Komparisi Type
+                </div>
+                <div class="FlexCell-twoThird">
+                  <div class="FlexGrid">
+                    <div class="FlexCell-halfs">
+                      <label>
+                        <input type="radio" id="notarisradio" name="resulttype" value="notaris" checked> Notaris
+                      </label>
+                    </div>
+                    <div class="FlexCell-halfs">
+                      <label>
+                        <input type="radio" id="ppatradio" name="resulttype" value="ppat"> P.P.A.T
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="cardAction">
+              <button class="Button" type="sumbit" id="submitButton">Generate</button>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+      <div class="FlexCell-half">
+        <div class="results pa3" id="ResultBox">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

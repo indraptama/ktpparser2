@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.list-no-style {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-no-style > li {
+  list-style: none;
+}
+
+.input-reset {
+  background-color: #fff;
+  border: 1px solid;
+  padding: 0.2em 0.25em;
+}
+
+.Card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 1em;
+  width: 512px;
+}
+
+.Button {
+  background-color: blue;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border: none;
+}
+
+.Button-cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.FlexGrid {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.FlexCell-half {
+  width: 50%;
+}
+
+.FlexCell-oneThird {
+  width: 33.333%
+}
+
+.FlexCell-twoThird {
+  width: 66.666%
+}
+
+.list-ktp > li {
+  margin-bottom: 0.5em;
+}
+
+/* Utils */
+.bg-nearWhite {
+  background-color: #f0f0f0;
+}
+
+.min-vh100 {
+  min-height: 100vh;
+}
+.pa3 {
+  padding: 1.5em;
+}
+
+.mb3 {
+  margin-bottom: 1.5em;
+}
+
+
+/*# sourceMappingURL=app.css.map*/
