@@ -124,8 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  // Form Reset
+  function resetForm(formId) {
+    var formContainer = document.querySelector(formId);
+    formContainer.reset();
+  };
+
   function submitForm() {
     var submitButton = document.querySelector('#submitButton');
+    var resetButton = document.querySelector('#resetButton');
     var resultTypeRadio = document.querySelector('input[name="resulttype"]');
     // Submit
     submitButton.addEventListener('click', function(e) {
@@ -137,11 +144,17 @@ document.addEventListener('DOMContentLoaded', () => {
         var Result = ppatParsing('#ktpform');
         ResultBox.innerHTML = Result;
       }
+    },false);
 
+    resetButton.addEventListener('click', function(e){
+      e.preventDefault();
+      resetForm('#ktpform');
+    }, false);
 
-      console.log(resultTypeRadio.checked);
-    },false)
   }
+
+  // Reset Form
+
 
   submitForm();
 
